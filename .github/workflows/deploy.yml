@@ -4,8 +4,8 @@ name: Deploy static content to Pages
 on:
   push:
     paths:
-      # Trigger only on index.html change
-      - 'index.html'
+      # Trigger only on pushes to the web directory
+      - 'web/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,8 +37,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the relevant file
-          path: './index.html'
+          # Upload the repository
+          path: './web'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
