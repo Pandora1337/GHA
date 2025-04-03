@@ -1,3 +1,3 @@
 # Non-monitored directory
 
-Changes/ pushes to this directory will not trigger the GitHub Action
+Changes to this directory will not trigger the GitHub Action
