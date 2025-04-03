@@ -1,7 +1,5 @@
 # GitHub Pages Deployment with Actions
 
-Moved project into separate repo for better clarity
-
 This project aims to demonstrate my knowledge of GitHub Actions to deploy a static website to GitHub Pages.
 
 Deploy action will only push the contents of `web`, and will be triggered after every push that changes that directory only.
